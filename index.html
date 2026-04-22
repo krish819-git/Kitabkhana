@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kitabkhana-Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+ <div class="navbar">
+
+  <div class="logo border">
+   <p>Kitabkhana</p>
+  </div>
+  
+  <div class="nav-search">
+   <input type="text" placeholder="Search Books..." class="search-input">
+   <div class="search-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+   </div>
+  </div>
+
+  <div class="form border">
+   <div class="sign">
+    <i class="fa-solid fa-circle-user"></i>
+   </div>
+    <span>Sign-up/Sign-in</span>
+  </div>
+
+  <div class="cart border">
+   <div class="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+   </div>
+    <span>Cart</span>
+  </div>
+ </div>
+ 
+ <div class="panel">
+  <div class="links">
+  <a href="index.html" class="active" target="_self">Home</a>
+  <a href="books.html" target="_self">Books</a>
+  <a href="categories.html" target="_self">Categories</a>
+  <a href="about.html" target="_self">About</a>
+  <a href="contact.html" target="_self">Contact</a>
+  </div>
+ </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<div class="hero-section">
+	<div class="hero-text">
+		<h2>Welcome to Kitabkhana</h2>
+		<p>Discover thousands of books across every genre. From timeless classics to modern bestsellers — your next great read is just a click away.</p>
+		<a href="books.html" class="hero-btn">Browse Books</a>
+	</div>
+	<div class="hero-stats">
+		<div class="hero-stat">
+			<span class="stat-num">10,000+</span>
+			<span class="stat-lbl">Books Available</span>
+		</div>
+		<div class="hero-stat">
+			<span class="stat-num">50,000+</span>
+			<span class="stat-lbl">Happy Readers</span>
+		</div>
+		<div class="hero-stat">
+			<span class="stat-num">7+</span>
+			<span class="stat-lbl">Genres</span>
+		</div>
+	</div>
+</div>
+
+
+<!-- ========== BROWSE BY GENRE ========== -->
+<div class="home-section">
+	<h2 class="section-heading">Browse by Genre</h2>
+	<div class="genre-strip">
+		<a href="categories.html#fiction"   class="genre-chip">&#10024; Fiction</a>
+		<a href="categories.html#mystery"   class="genre-chip">&#128269; Mystery</a>
+		<a href="categories.html#romance"   class="genre-chip">&#10084; Romance</a>
+		<a href="categories.html#scifi"     class="genre-chip">&#128640; Sci-Fi</a>
+		<a href="categories.html#biography" class="genre-chip">&#128214; Biography</a>
+		<a href="categories.html#selfhelp"  class="genre-chip">&#129504; Self-Help</a>
+		<a href="categories.html#history"   class="genre-chip">&#127963; History</a>
+		<a href="categories.html#children"  class="genre-chip">&#128118; Children</a>
+	</div>
+</div>
+
+
+<!-- ========== FEATURED BOOKS ========== -->
+<div class="home-section">
+	<div class="section-row">
+		<h2 class="section-heading">Featured Books</h2>
+		<a href="books.html" class="see-all-link">See All Books &rarr;</a>
+	</div>
+
+	<!-- 5 featured books shown in a row -->
+	<div class="books-row-5">
+
+		<div class="book-card">
+			<img src="images/midnight-library.jpg" alt="The Midnight Library" class="book-cover-img">
+			<div class="book-info">
+				<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+				<p class="book-title">The Midnight Library</p>
+				<p class="book-author">Matt Haig</p>
+				<div class="book-footer">
+					<span class="book-price">Rs. 850</span>
+					<button class="add-cart-btn">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="book-card">
+			<img src="images/atomic-habits.jpg" alt="Atomic Habits" class="book-cover-img">
+			<div class="book-info">
+				<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+				<p class="book-title">Atomic Habits</p>
+				<p class="book-author">James Clear</p>
+				<div class="book-footer">
+					<span class="book-price">Rs. 720</span>
+					<button class="add-cart-btn">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="book-card">
+			<img src="images/dune.jpg" alt="Dune" class="book-cover-img">
+			<div class="book-info">
+				<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+				<p class="book-title">Dune</p>
+				<p class="book-author">Frank Herbert</p>
+				<div class="book-footer">
+					<span class="book-price">Rs. 640</span>
+					<button class="add-cart-btn">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="book-card">
+			<img src="images/sapiens.jpg" alt="Sapiens" class="book-cover-img">
+			<div class="book-info">
+				<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+				<p class="book-title">Sapiens</p>
+				<p class="book-author">Yuval Noah Harari</p>
+				<div class="book-footer">
+					<span class="book-price">Rs. 950</span>
+					<button class="add-cart-btn">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="book-card">
+			<img src="images/alchemist.jpg" alt="The Alchemist" class="book-cover-img">
+			<div class="book-info">
+				<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+				<p class="book-title">The Alchemist</p>
+				<p class="book-author">Paulo Coelho</p>
+				<div class="book-footer">
+					<span class="book-price">Rs. 560</span>
+					<button class="add-cart-btn">Add</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- ========== PROMO BANNER ========== -->
+<div class="promo-banner">
+	<div class="promo-text">
+		<h2>Get 20% off your first order</h2>
+		<p>Use the code at checkout. Valid on all titles above Rs. 500.</p>
+	</div>
+	<div class="promo-code-box">
+		<p class="promo-label">PROMO CODE</p>
+		<p class="promo-code">KITAB20</p>
+	</div>
+</div>
+
+
+
+<footer>
+	<div class="footer-content">
+		<div class="footer-brand">
+			<span class="footer-logo">Kitabkhana</span>
+			<p>Your favourite online bookstore in Nepal.</p>
+		</div><br>
+		<div class="footer-links">
+			<h4>Quick Links</h4>
+			<a href="index.html">Home</a><br>
+			<a href="books.html">Books</a><br>
+			<a href="categories.html">Categories</a><br>
+			<a href="about.html">About</a><br>
+			<a href="contact.html">Contact</a>
+		</div><br>
+		<div class="footer-links">
+			<h4>Genres</h4>
+			<a href="categories.html#fiction">Fiction</a><br>
+			<a href="categories.html#mystery">Mystery</a><br>
+			<a href="categories.html#romance">Romance</a><br>
+			<a href="categories.html#scifi">Sci-fi</a><br>
+			<a href="categories.html#biography">Biography</a><br>
+			<a href="categories.html#selfhelp">Self-help</a><br>
+			<a href="categories.html#history">History</a><br>
+			<a href="categories.html#children">Children</a>
+
+		</div><br>
+		<div class="footer-contact">
+			<h4>Contact Us</h4>
+			<p><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</p>
+			<p><i class="fa-solid fa-envelope"></i> hello@kitabkhana.com</p>
+			<p><i class="fa-solid fa-phone"></i> +977 9800000000</p>
+		</div><br>
+	 </div>
+	        <div class="footer-bottom">
+		<p>© 2026 Kitabkhana. All rights reserved.</p>
+	        </div>
+
+</footer>
+</body>
+</html>

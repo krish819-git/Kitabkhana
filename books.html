@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kitabkhana-Books</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+ <div class="navbar">
+
+  <div class="logo border">
+   <p>Kitabkhana</p>
+  </div>
+  
+  <div class="nav-search">
+   <input type="text" placeholder="Search Books..." class="search-input">
+   <div class="search-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+   </div>
+  </div>
+
+  <div class="form border">
+   <div class="sign">
+    <i class="fa-solid fa-circle-user"></i>
+   </div>
+    <span>Sign-up/Sign-in</span>
+  </div>
+
+  <div class="cart border">
+   <div class="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+   </div>
+    <span>Cart</span>
+  </div>
+ </div>
+ 
+ <div class="panel">
+  <div class="links">
+  <a href="index.html" target="_self">Home</a>
+  <a href="books.html" class="active" target="_self">Books</a>
+  <a href="categories.html" target="_self">Categories</a>
+  <a href="about.html" target="_self">About</a>
+  <a href="contact.html" target="_self">Contact</a>
+
+  </div>
+ </div>
+</header>
+
+<!-- ========== PAGE BANNER ========== -->
+<div class="page-banner">
+	<h1>All Books</h1>
+	<p>5 books shown per genre &mdash; click "See All" to view the full collection</p>
+</div>
+
+
+<!-- ========== BOOKS PAGE CONTENT ========== -->
+<!--
+	HOW TO ADD A NEW GENRE:
+	Copy one .genre-block from below, change the genre-label text,
+	change the "See All" link href to the right category anchor,
+	and replace the 5 book cards with your books.
+	Each genre-block is completely independent.
+-->
+<div class="books-page-wrapper">
+
+
+	<!-- ===== FICTION ===== -->
+	<!--
+		HOW THIS WORKS:
+		.books-row-5 shows exactly 5 books in one line.
+		These 5 books are a preview only.
+		"See All" takes the user to categories.html#fiction
+		where the full list of fiction books is shown.
+		Do NOT add more than 5 book-cards here.
+		Add extra books in categories.html instead.
+	-->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Fiction</h3>
+			<a href="categories.html#fiction" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/midnight-library.jpg" alt="The Midnight Library" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Midnight Library</p>
+					<p class="book-author">Matt Haig</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 850</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/alchemist.jpg" alt="The Alchemist" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Alchemist</p>
+					<p class="book-author">Paulo Coelho</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 560</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/1984.jpg" alt="1984" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">1984</p>
+					<p class="book-author">George Orwell</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 480</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/mockingbird.jpg" alt="To Kill a Mockingbird" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">To Kill a Mockingbird</p>
+					<p class="book-author">Harper Lee</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 520</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/pride-prejudice.jpg" alt="Pride and Prejudice" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Pride and Prejudice</p>
+					<p class="book-author">Jane Austen</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 390</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== MYSTERY ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Mystery</h3>
+			<a href="categories.html#mystery" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/gone-girl.jpg" alt="Gone Girl" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">Gone Girl</p>
+					<p class="book-author">Gillian Flynn</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 700</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/thursday-murder.jpg" alt="The Thursday Murder Club" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Thursday Murder Club</p>
+					<p class="book-author">Richard Osman</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 780</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/then-there-were-none.jpg" alt="And Then There Were None" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">And Then There Were None</p>
+					<p class="book-author">Agatha Christie</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 430</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/da-vinci-code.jpg" alt="The Da Vinci Code" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">The Da Vinci Code</p>
+					<p class="book-author">Dan Brown</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 620</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/girl-train.jpg" alt="The Girl on the Train" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">The Girl on the Train</p>
+					<p class="book-author">Paula Hawkins</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 580</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== SCI-FI ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Sci-Fi</h3>
+			<a href="categories.html#scifi" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/dune.jpg" alt="Dune" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Dune</p>
+					<p class="book-author">Frank Herbert</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 640</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/martian.jpg" alt="The Martian" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Martian</p>
+					<p class="book-author">Andy Weir</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 690</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/enders-game.jpg" alt="Ender's Game" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">Ender's Game</p>
+					<p class="book-author">Orson Scott Card</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 580</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/hitchhiker.jpg" alt="Hitchhiker's Guide to the Galaxy" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Hitchhiker's Guide to the Galaxy</p>
+					<p class="book-author">Douglas Adams</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 500</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/foundation.jpg" alt="Foundation" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Foundation</p>
+					<p class="book-author">Isaac Asimov</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 610</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== SELF-HELP ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Self-Help</h3>
+			<a href="categories.html#selfhelp" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/atomic-habits.jpg" alt="Atomic Habits" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Atomic Habits</p>
+					<p class="book-author">James Clear</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 720</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/subtle-art.jpg" alt="The Subtle Art of Not Giving a F*ck" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">The Subtle Art of Not Giving a F*ck</p>
+					<p class="book-author">Mark Manson</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 680</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/how-win-friends.jpg" alt="How to Win Friends" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">How to Win Friends and Influence People</p>
+					<p class="book-author">Dale Carnegie</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 540</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/ikigai.jpg" alt="Ikigai" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Ikigai</p>
+					<p class="book-author">Hector Garcia</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 490</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/power-of-now.jpg" alt="The Power of Now" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">The Power of Now</p>
+					<p class="book-author">Eckhart Tolle</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 650</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== BIOGRAPHY ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Biography</h3>
+			<a href="categories.html#biography" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/sapiens.jpg" alt="Sapiens" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Sapiens</p>
+					<p class="book-author">Yuval Noah Harari</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 950</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/steve-jobs.jpg" alt="Steve Jobs" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">Steve Jobs</p>
+					<p class="book-author">Walter Isaacson</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 890</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/becoming.jpg" alt="Becoming" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Becoming</p>
+					<p class="book-author">Michelle Obama</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 820</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/educated.jpg" alt="Educated" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Educated</p>
+					<p class="book-author">Tara Westover</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 760</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/long-walk-freedom.jpg" alt="Long Walk to Freedom" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Long Walk to Freedom</p>
+					<p class="book-author">Nelson Mandela</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 810</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== ROMANCE ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Romance</h3>
+			<a href="categories.html#romance" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/beach-read.jpg" alt="Beach Read" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Beach Read</p>
+					<p class="book-author">Emily Henry</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 680</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/notebook.jpg" alt="The Notebook" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Notebook</p>
+					<p class="book-author">Nicholas Sparks</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 520</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/me-before-you.jpg" alt="Me Before You" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Me Before You</p>
+					<p class="book-author">Jojo Moyes</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 610</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/outlander.jpg" alt="Outlander" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">Outlander</p>
+					<p class="book-author">Diana Gabaldon</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 730</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/pride-prejudice.jpg" alt="Pride and Prejudice" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Pride and Prejudice</p>
+					<p class="book-author">Jane Austen</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 390</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== HISTORY ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">History</h3>
+			<a href="categories.html#history" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/guns-germs-steel.jpg" alt="Guns Germs and Steel" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Guns, Germs and Steel</p>
+					<p class="book-author">Jared Diamond</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 880</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/silk-roads.jpg" alt="The Silk Roads" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Silk Roads</p>
+					<p class="book-author">Peter Frankopan</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 920</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/sapiens.jpg" alt="Sapiens" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Sapiens</p>
+					<p class="book-author">Yuval Noah Harari</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 950</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/diary-young-girl.jpg" alt="Diary of a Young Girl" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Diary of a Young Girl</p>
+					<p class="book-author">Anne Frank</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 420</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/long-walk-freedom.jpg" alt="Long Walk to Freedom" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Long Walk to Freedom</p>
+					<p class="book-author">Nelson Mandela</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 810</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ===== CHILDREN ===== -->
+	<div class="genre-block">
+		<div class="genre-label-row">
+			<h3 class="genre-label">Children</h3>
+			<a href="categories.html#children" class="see-all-link">See All &rarr;</a>
+		</div>
+		<div class="books-row-5">
+
+			<div class="book-card">
+				<img src="images/very-hungry-caterpillar.jpg" alt="The Very Hungry Caterpillar" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The Very Hungry Caterpillar</p>
+					<p class="book-author">Eric Carle</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 350</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/charlottes-web.jpg" alt="Charlotte's Web" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Charlotte's Web</p>
+					<p class="book-author">E.B. White</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 380</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/bfg.jpg" alt="The BFG" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">The BFG</p>
+					<p class="book-author">Roald Dahl</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 420</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/matilda.jpg" alt="Matilda" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+					<p class="book-title">Matilda</p>
+					<p class="book-author">Roald Dahl</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 410</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-card">
+				<img src="images/little-prince.jpg" alt="The Little Prince" class="book-cover-img">
+				<div class="book-info">
+					<div class="book-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+					<p class="book-title">The Little Prince</p>
+					<p class="book-author">Antoine de Saint-Exupery</p>
+					<div class="book-footer">
+						<span class="book-price">Rs. 360</span>
+						<button class="add-cart-btn">Add</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+<!-- end books-page-wrapper -->
+
+<footer>
+	<div class="footer-content">
+		<div class="footer-brand">
+			<span class="footer-logo">Kitabkhana</span>
+			<p>Your favourite online bookstore in Nepal.</p>
+		</div><br>
+		<div class="footer-links">
+			<h4>Quick Links</h4>
+			<a href="index.html">Home</a><br>
+			<a href="books.html">Books</a><br>
+			<a href="categories.html">Categories</a><br>
+			<a href="about.html">About</a><br>
+			<a href="contact.html">Contact</a>
+		</div><br>
+		<div class="footer-links">
+			<h4>Genres</h4>
+			<a href="categories.html#fiction">Fiction</a><br>
+			<a href="categories.html#mystery">Mystery</a><br>
+			<a href="categories.html#romance">Romance</a><br>
+			<a href="categories.html#scifi">Sci-fi</a><br>
+			<a href="categories.html#biography">Biography</a><br>
+			<a href="categories.html#selfhelp">Self-help</a><br>
+			<a href="categories.html#history">History</a><br>
+			<a href="categories.html#children">Children</a>
+		</div><br>
+		<div class="footer-contact">
+			<h4>Contact Us</h4>
+			<p><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</p>
+			<p><i class="fa-solid fa-envelope"></i> hello@kitabkhana.com</p>
+			<p><i class="fa-solid fa-phone"></i> +977 9800000000</p>
+		</div><br>
+	 </div>
+	        <div class="footer-bottom">
+		<p>© 2026 Kitabkhana. All rights reserved.</p>
+	        </div>
+
+</footer>
+</body>
+</html>
